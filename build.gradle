@@ -22,8 +22,10 @@ test {
     useJUnitPlatform()
     testLogging {
         events "passed", "skipped", "failed"
+        exceptionFormat "full"
     }
 }
+
 kotlin {
     jvmToolchain(21)
 }
