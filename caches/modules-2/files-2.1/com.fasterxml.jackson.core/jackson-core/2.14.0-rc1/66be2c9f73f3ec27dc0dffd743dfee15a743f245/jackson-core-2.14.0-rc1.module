@@ -1,0 +1,84 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.fasterxml.jackson.core",
+    "module": "jackson-core",
+    "version": "2.14.0-rc1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "maven": {
+      "version": "3.8.6"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.fasterxml.jackson",
+          "module": "jackson-bom",
+          "version": {
+            "requires": "2.14.0-rc1"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        }
+      ],
+      "files": [
+        {
+          "name": "jackson-core-2.14.0-rc1.jar",
+          "url": "jackson-core-2.14.0-rc1.jar",
+          "size": 456045,
+          "sha512": "83bd14f171de94efca8a8805b0ddd417131280e3c2007d183282d4c0905eb62cae31ddfc0f54c6ca20d0db6b4dfa1e8e6fd536f8e5ee3d8563a965dd89c33ab1",
+          "sha256": "f1682648076002f4040ecb27c61f696dcad0f571ae6753153312ef66ff851917",
+          "sha1": "a5d9b5fa8d49aea385608f14d0cc269bf9489525",
+          "md5": "b4aa9d426ef7dd8dcd02df6f7546e02f"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.fasterxml.jackson",
+          "module": "jackson-bom",
+          "version": {
+            "requires": "2.14.0-rc1"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        }
+      ],
+      "files": [
+        {
+          "name": "jackson-core-2.14.0-rc1.jar",
+          "url": "jackson-core-2.14.0-rc1.jar",
+          "size": 456045,
+          "sha512": "83bd14f171de94efca8a8805b0ddd417131280e3c2007d183282d4c0905eb62cae31ddfc0f54c6ca20d0db6b4dfa1e8e6fd536f8e5ee3d8563a965dd89c33ab1",
+          "sha256": "f1682648076002f4040ecb27c61f696dcad0f571ae6753153312ef66ff851917",
+          "sha1": "a5d9b5fa8d49aea385608f14d0cc269bf9489525",
+          "md5": "b4aa9d426ef7dd8dcd02df6f7546e02f"
+        }
+      ]
+    }
+  ]
+}
