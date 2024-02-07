@@ -103,20 +103,18 @@ public final class App {
 
     public void listPortfolio(String email) {
         if(utilizatori.containsKey(email)) {
-            System.out.print("{" + '"' + "stocks" + '"' + ':' + '[');
+            System.out.print("{\"stocks\":[");
             for(Actiuni actiune : utilizatori.get(email).portofoliu_actiuni.actiuni) {
-                System.out.print("{" + '"' + "stockname" + '"' + ':' + '"' + actiune.nume_companie + '"' + ',' +
-                        '"' + "amount" + '"' + ':' + actiune.numar_actiuni + '}' );
+                System.out.print("{\"stockname\":\"" + actiune.nume_companie + "\",\"amount\":" + actiune.numar_actiuni + "}");
                 if(utilizatori.get(email).portofoliu_actiuni.actiuni.indexOf(actiune) != utilizatori.get(email).portofoliu_actiuni.actiuni.size() - 1) {
                     System.out.print(",");
                 }
             }
             System.out.print("],");
-            System.out.print('"' + "accounts" + '"' + ':' + '[');
+            System.out.print("\"accounts\":[");
             for(Cont cont : utilizatori.get(email).portofoliu_conturi.conturi) {
                 String formattedSuma = String.format("%.2f", cont.suma);
-                System.out.print("{" + '"' + "currencyname" + '"' + ':' + '"' + cont.tip + '"' + ',' +
-                        '"' + "amount" + '"' + ':' + '"' + formattedSuma + '"' + '}' );
+                System.out.print("{\"currencyname\":\"" + cont.tip + "\",\"amount\":\"" + formattedSuma + "\"}" );
                 if(utilizatori.get(email).portofoliu_conturi.conturi.indexOf(cont) != utilizatori.get(email).portofoliu_conturi.conturi.size() - 1) {
                     System.out.print(",");
                 }
