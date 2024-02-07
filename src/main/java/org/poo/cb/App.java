@@ -119,7 +119,8 @@ public final class App {
                     System.out.print(",");
                 }
             }
-            System.out.println("]}");
+            System.out.print("]}");
+            System.out.println();
         } else {
             System.out.println("user with email " + email + " doesn't exist");
         }
