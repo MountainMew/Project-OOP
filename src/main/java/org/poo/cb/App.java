@@ -127,7 +127,7 @@ public final class App {
     }
 
     public void exchangeMoney(String email, String moneda1, String moneda2, double suma) {
-        Path path = Paths.get("src/main/resources/common/ExchangeRates.csv");
+        Path path = Paths.get("src/main/resources/common/exchangeRates.csv");
         try {
             BufferedReader br = new BufferedReader(new java.io.FileReader(path.toString()));
             String line = br.readLine();
